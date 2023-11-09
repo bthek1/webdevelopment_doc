@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "webdevelopment_doc"
+  site-url: "https://bthek1.github.io/webdevelopment_doc"
+  description: "webdevelopment_doc"
+  repo-branch: main
+  repo-url: "https://github.com/bthek1/webdevelopment_doc"
