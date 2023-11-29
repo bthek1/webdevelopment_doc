@@ -340,6 +340,34 @@
     "href": "git.html#basic-commands",
     "title": "GIT",
     "section": "Basic Commands",
-    "text": "Basic Commands\ngit add ."
+    "text": "Basic Commands\nAdds files for uploading\ngit add .\ngit commit -m \"&lt;message&gt;\"\ngit push"
+  },
+  {
+    "objectID": "git.html#git-files",
+    "href": "git.html#git-files",
+    "title": "GIT",
+    "section": "Git Files",
+    "text": "Git Files\n.git : main file managing git stuff\n.gitignore : list of files and files types to ignore\n.github : git hub automation"
+  },
+  {
+    "objectID": "git.html#git-branches",
+    "href": "git.html#git-branches",
+    "title": "GIT",
+    "section": "Git Branches",
+    "text": "Git Branches"
+  },
+  {
+    "objectID": "git.html#git-forking",
+    "href": "git.html#git-forking",
+    "title": "GIT",
+    "section": "Git Forking",
+    "text": "Git Forking"
+  },
+  {
+    "objectID": "git.html#git-submodules",
+    "href": "git.html#git-submodules",
+    "title": "GIT",
+    "section": "Git submodules",
+    "text": "Git submodules"
   }
 ]
