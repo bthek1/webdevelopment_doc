@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="webdevelopment_doc">
+<meta name="description" content="Time series Backend">
 
-<title>webdevelopment_doc - webdevelopment_doc</title>
+<title>webdevelopment_doc - Influx</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,7 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./git.html" rel="next">
+<link href="./django.html" rel="next">
+<link href="./grafana.html" rel="prev">
 <link href="./bird.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -101,11 +102,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="webdevelopment_doc - webdevelopment_doc">
-<meta property="og:description" content="webdevelopment_doc">
+<meta property="og:title" content="webdevelopment_doc - Influx">
+<meta property="og:description" content="Time series Backend">
 <meta property="og:site-name" content="webdevelopment_doc">
-<meta name="twitter:title" content="webdevelopment_doc - webdevelopment_doc">
-<meta name="twitter:description" content="webdevelopment_doc">
+<meta name="twitter:title" content="webdevelopment_doc - Influx">
+<meta name="twitter:description" content="Time series Backend">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -227,7 +228,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><a href="https://bthek1.github.io/webdevelopment_doc/">webdevelopment_doc</a></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./influx.html">Influx</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -241,7 +242,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><a href="https://bthek1.github.io/webdevelopment_doc/">webdevelopment_doc</a></span></a>
   </div>
 </li>
@@ -265,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./influx.html" class="sidebar-item-text sidebar-link">
+  <a href="./influx.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Influx</span></a>
   </div>
 </li>
@@ -314,22 +315,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#install" id="toc-install" class="nav-link active" data-scroll-target="#install">Install</a></li>
-  <li><a href="#how-to-use" id="toc-how-to-use" class="nav-link" data-scroll-target="#how-to-use">How to use</a></li>
+  <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation">Installation</a></li>
+  <li><a href="#to-view-all-services" id="toc-to-view-all-services" class="nav-link" data-scroll-target="#to-view-all-services">To view all Services</a></li>
+  <li><a href="#server-settings" id="toc-server-settings" class="nav-link" data-scroll-target="#server-settings">Server Settings</a>
+  <ul class="collapse">
+  <li><a href="#to-start-influx-server" id="toc-to-start-influx-server" class="nav-link" data-scroll-target="#to-start-influx-server">To start influx server</a></li>
+  <li><a href="#show-status-of-influx-server" id="toc-show-status-of-influx-server" class="nav-link" data-scroll-target="#show-status-of-influx-server">Show Status of influx server</a></li>
+  <li><a href="#to-stop-influx-server" id="toc-to-stop-influx-server" class="nav-link" data-scroll-target="#to-stop-influx-server">To Stop influx server</a></li>
+  </ul></li>
+  <li><a href="#influxdb-oss-urls" id="toc-influxdb-oss-urls" class="nav-link" data-scroll-target="#influxdb-oss-urls">InfluxDB OSS URLs</a></li>
+  <li><a href="#t0-change-ports" id="toc-t0-change-ports" class="nav-link" data-scroll-target="#t0-change-ports">T0 change ports</a></li>
+  <li><a href="#to-setup-influx-server" id="toc-to-setup-influx-server" class="nav-link" data-scroll-target="#to-setup-influx-server">To setup influx server</a></li>
+  <li><a href="#organisation-settings" id="toc-organisation-settings" class="nav-link" data-scroll-target="#organisation-settings">Organisation Settings</a>
+  <ul class="collapse">
+  <li><a href="#to-show-organisation-list" id="toc-to-show-organisation-list" class="nav-link" data-scroll-target="#to-show-organisation-list">To show organisation list</a></li>
+  </ul></li>
+  <li><a href="#bucket-settings" id="toc-bucket-settings" class="nav-link" data-scroll-target="#bucket-settings">Bucket Settings</a>
+  <ul class="collapse">
+  <li><a href="#to-create-bucket" id="toc-to-create-bucket" class="nav-link" data-scroll-target="#to-create-bucket">To create bucket</a></li>
+  <li><a href="#to-enter-data-to-bucket" id="toc-to-enter-data-to-bucket" class="nav-link" data-scroll-target="#to-enter-data-to-bucket">To enter data to bucket</a></li>
+  <li><a href="#to-query-data-from-influx" id="toc-to-query-data-from-influx" class="nav-link" data-scroll-target="#to-query-data-from-influx">To query data from influx</a></li>
+  </ul></li>
+  <li><a href="#user-settings" id="toc-user-settings" class="nav-link" data-scroll-target="#user-settings">User settings</a>
+  <ul class="collapse">
+  <li><a href="#to-create-new-user" id="toc-to-create-new-user" class="nav-link" data-scroll-target="#to-create-new-user">To create new user</a></li>
+  <li><a href="#to-show-user-list" id="toc-to-show-user-list" class="nav-link" data-scroll-target="#to-show-user-list">To show user list</a></li>
+  <li><a href="#to-delete-user" id="toc-to-delete-user" class="nav-link" data-scroll-target="#to-delete-user">To delete user</a></li>
+  <li><a href="#to-delete-user-1" id="toc-to-delete-user-1" class="nav-link" data-scroll-target="#to-delete-user-1">To delete user</a></li>
+  </ul></li>
+  <li><a href="#task" id="toc-task" class="nav-link" data-scroll-target="#task">Task</a></li>
+  <li><a href="#file-structure" id="toc-file-structure" class="nav-link" data-scroll-target="#file-structure">File structure</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.dev/bthek1/webdevelopment_doc/blob/main/index.ipynb" class="toc-action">Edit this page</a></p><p><a href="https://github.com/bthek1/webdevelopment_doc/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.dev/bthek1/webdevelopment_doc/blob/main/003_Influx.ipynb" class="toc-action">Edit this page</a></p><p><a href="https://github.com/bthek1/webdevelopment_doc/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><a href="https://bthek1.github.io/webdevelopment_doc/">webdevelopment_doc</a></h1>
+<h1 class="title">Influx</h1>
 </div>
 
 <div>
   <div class="description">
-    webdevelopment_doc
+    Time series Backend
   </div>
 </div>
 
@@ -345,20 +374,162 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
-<p>This file will become your README and also the index of your documentation.</p>
-<section id="install" class="level2">
-<h2 class="anchored" data-anchor-id="install">Install</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install webdevelopment_doc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="installation" class="level2">
+<h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<p>Inside WSL</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ubuntu/Debian AMD64</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-O</span> https://dl.influxdata.com/influxdb/releases/influxdb2_2.7.3-1_amd64.deb</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> influxdb2_2.7.3-1_amd64.deb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="how-to-use" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use">How to use</h2>
-<p>Fill me in please! Don’t forget code examples:</p>
+<section id="to-view-all-services" class="level2">
+<h2 class="anchored" data-anchor-id="to-view-all-services">To view all Services</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">systemctl</span> <span class="at">--type</span><span class="op">=</span>service <span class="at">--state</span><span class="op">=</span>running</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pstree</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="op">+</span><span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<pre><code>2</code></pre>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>ps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    PID TTY          TIME CMD
+  16853 pts/7    00:00:00 ps</code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pstree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>systemd─┬─2*[agetty]
+        ├─apache2───2*[apache2───26*[{apache2}]]
+        ├─cron
+        ├─dbus-daemon
+        ├─grafana───17*[{grafana}]
+        ├─influxd───23*[{influxd}]
+        ├─init-systemd(Ub─┬─SessionLeader───Relay(526)───bash
+        │                 ├─SessionLeader───Relay(6740)───bash───jupyter-lab─┬─+
+        │                 │                                                  ├─+
+        │                 │                                                  ├─+
+        │                 │                                                  └─+
+        │                 ├─SessionLeader───Relay(14830)───bash───jupyter-lab─┬+++
+        │                 │                                                   └+++
+        │                 ├─SessionLeader───Relay(16773)───bash───sudo
+        │                 ├─init───{init}
+        │                 ├─login───bash
+        │                 └─{init-systemd(Ub}
+        ├─networkd-dispat
+        ├─packagekitd───2*[{packagekitd}]
+        ├─polkitd───2*[{polkitd}]
+        ├─redis-server───4*[{redis-server}]
+        ├─rsyslogd───3*[{rsyslogd}]
+        ├─smtpd───6*[smtpd]
+        ├─snapd───17*[{snapd}]
+        ├─11*[snapfuse]
+        ├─subiquity-serve───python3.10─┬─python3
+        │                              └─5*[{python3.10}]
+        ├─systemd───(sd-pam)
+        ├─systemd-journal
+        ├─systemd-logind
+        ├─systemd-resolve
+        ├─systemd-udevd
+        └─unattended-upgr───{unattended-upgr}</code></pre>
+</div>
+</div>
+</section>
+<section id="server-settings" class="level2">
+<h2 class="anchored" data-anchor-id="server-settings">Server Settings</h2>
+<section id="to-start-influx-server" class="level3">
+<h3 class="anchored" data-anchor-id="to-start-influx-server">To start influx server</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> service influxdb start <span class="at">--http-bind-address</span> :8080</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="show-status-of-influx-server" class="level3">
+<h3 class="anchored" data-anchor-id="show-status-of-influx-server">Show Status of influx server</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> service influxdb status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="to-stop-influx-server" class="level3">
+<h3 class="anchored" data-anchor-id="to-stop-influx-server">To Stop influx server</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> service influxdb stop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="influxdb-oss-urls" class="level2">
+<h2 class="anchored" data-anchor-id="influxdb-oss-urls">InfluxDB OSS URLs</h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">http://localhost:8086/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="t0-change-ports" class="level2">
+<h2 class="anchored" data-anchor-id="t0-change-ports">T0 change ports</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influxd</span> <span class="at">--http-bind-address</span> :8080</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="to-setup-influx-server" class="level2">
+<h2 class="anchored" data-anchor-id="to-setup-influx-server">To setup influx server</h2>
+<blockquote class="blockquote">
+<p>First step, Must do</p>
+</blockquote>
+<div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> setup <span class="dt">\</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--username</span> bthek1 <span class="dt">\</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--password</span> <span class="op">&lt;</span>password<span class="op">&gt;</span> <span class="dt">\</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--token</span> TOKEN <span class="dt">\</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--org</span> ORGANIZATION_NAME <span class="dt">\</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">--bucket</span> BUCKET_NAME <span class="dt">\</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">--force</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="organisation-settings" class="level2">
+<h2 class="anchored" data-anchor-id="organisation-settings">Organisation Settings</h2>
+<section id="to-show-organisation-list" class="level3">
+<h3 class="anchored" data-anchor-id="to-show-organisation-list">To show organisation list</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> org ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="bucket-settings" class="level2">
+<h2 class="anchored" data-anchor-id="bucket-settings">Bucket Settings</h2>
+<section id="to-create-bucket" class="level3">
+<h3 class="anchored" data-anchor-id="to-create-bucket">To create bucket</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> bucket create <span class="at">--name</span> <span class="op">&lt;</span>name<span class="op">&gt;</span> -c <span class="op">&lt;</span>config-file<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="to-enter-data-to-bucket" class="level3">
+<h3 class="anchored" data-anchor-id="to-enter-data-to-bucket">To enter data to bucket</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> write <span class="at">--bucket</span> sample-bucket <span class="at">--url</span> https://influx-testdata.s3.amazonaws.com/air-sensor-data-annotated.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="to-query-data-from-influx" class="level3">
+<h3 class="anchored" data-anchor-id="to-query-data-from-influx">To query data from influx</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> query <span class="st">'from(bucket:\"sample-bucket\") |&gt; range(start:-30m)'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> query <span class="st">'from(bucket: "sample-bucket")</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="st">  |&gt; range(start:-4h , stop: -0m)</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="st">  |&gt; filter(fn: (r) =&gt; r["_measurement"] == "airSensors")</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="st">  |&gt; filter(fn: (r) =&gt; r["_field"] == "temperature")</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="st">  |&gt; aggregateWindow(every: 1m, fn: mean, createEmpty: false)</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="st">  |&gt; yield(name: "mean")'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="user-settings" class="level2">
+<h2 class="anchored" data-anchor-id="user-settings">User settings</h2>
+<section id="to-create-new-user" class="level3">
+<h3 class="anchored" data-anchor-id="to-create-new-user">To create new user</h3>
+<div class="sourceCode" id="cb19"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> user create <span class="at">-n</span> <span class="op">&lt;</span>username<span class="op">&gt;</span> -p <span class="op">&lt;</span>password<span class="op">&gt;</span> -o <span class="op">&lt;</span>org-name<span class="op">&gt;</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> user create <span class="at">-n</span> ben <span class="at">-p</span> Asdf,mnb1234 <span class="at">-o</span> phisaver</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="to-show-user-list" class="level3">
+<h3 class="anchored" data-anchor-id="to-show-user-list">To show user list</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> user ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="to-delete-user" class="level3">
+<h3 class="anchored" data-anchor-id="to-delete-user">To delete user</h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> user delete <span class="at">-i</span> <span class="op">&lt;</span>id<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="to-delete-user-1" class="level3">
+<h3 class="anchored" data-anchor-id="to-delete-user-1">To delete user</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">influx</span> user update <span class="at">-i</span> <span class="op">&lt;</span>user-id<span class="op">&gt;</span> -n <span class="op">&lt;</span>new-username<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="task" class="level2">
+<h2 class="anchored" data-anchor-id="task">Task</h2>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> influxdata<span class="op">/</span>influxdb<span class="op">/</span>sample</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>option task <span class="op">=</span> {</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  name: <span class="st">"Collect air sensor sample data"</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  every: <span class="st">'15m'</span>,</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>sample.data(<span class="bu">set</span>: <span class="st">"airSensor"</span>)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">|&gt;</span> to(bucket: <span class="st">"example-bucket"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="file-structure" class="level2">
+<h2 class="anchored" data-anchor-id="file-structure">File structure</h2>
 
 
 </section>
@@ -716,10 +887,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./grafana.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Grafana</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./git.html" class="pagination-link">
-        <span class="nav-page-text">GIT</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./django.html" class="pagination-link">
+        <span class="nav-page-text">Django</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
