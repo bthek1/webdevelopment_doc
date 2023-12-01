@@ -10,7 +10,7 @@ format:
     toc: true
     
 website:
-  title: "Web Development tools"
+  title: "Webdevelopment Documentation"
   image: "bird.jpg"
   favicon: "bird.jpg"
   reader-mode: true
@@ -53,10 +53,12 @@ website:
         menu:
         - text: "Documentation"
           href: https://bthek1.github.io/webdevelopment_doc/
-        - text: "React"
-          href: https://bthek1.github.io/webdevelopment_doc/React/react.html
-        - text: "Django"
-          href: https://bthek1.github.io/webdevelopment_doc/django.html
+          
+      - text: "Nbdev Automation"
+        menu:
+        - text: "Automation lib"
+          href: https://bthek1.github.io/nbdevAuto/
+          
       - text: "Help"
         menu:
           - text: "Report a Bug"
