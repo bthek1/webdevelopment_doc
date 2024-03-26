@@ -1,0 +1,931 @@
+[
+  {
+    "objectID": "React/react.html",
+    "href": "React/react.html",
+    "title": "React + typescript",
+    "section": "",
+    "text": "need node version &gt;16 ==&gt; goto node for instructions",
+    "crumbs": [
+      "Blog",
+      "React",
+      "React + typescript"
+    ]
+  },
+  {
+    "objectID": "React/react.html#setup-using-vite",
+    "href": "React/react.html#setup-using-vite",
+    "title": "React + typescript",
+    "section": "Setup using vite",
+    "text": "Setup using vite\nnpm create vite@4.1.0",
+    "crumbs": [
+      "Blog",
+      "React",
+      "React + typescript"
+    ]
+  },
+  {
+    "objectID": "React/react.html#settings",
+    "href": "React/react.html#settings",
+    "title": "React + typescript",
+    "section": "settings",
+    "text": "settings\nProject name: … react-app\n✔ Select a framework: › React\n✔ Select a variant: › TypeScript",
+    "crumbs": [
+      "Blog",
+      "React",
+      "React + typescript"
+    ]
+  },
+  {
+    "objectID": "React/react.html#setup-react-app",
+    "href": "React/react.html#setup-react-app",
+    "title": "React + typescript",
+    "section": "Setup React app",
+    "text": "Setup React app\ncd react-app\nnpm install",
+    "crumbs": [
+      "Blog",
+      "React",
+      "React + typescript"
+    ]
+  },
+  {
+    "objectID": "React/react.html#localhost",
+    "href": "React/react.html#localhost",
+    "title": "React + typescript",
+    "section": "Localhost",
+    "text": "Localhost\nnpm run dev\nhttp://127.0.0.1:5173/",
+    "crumbs": [
+      "Blog",
+      "React",
+      "React + typescript"
+    ]
+  },
+  {
+    "objectID": "React/react.html#using-bootstrap",
+    "href": "React/react.html#using-bootstrap",
+    "title": "React + typescript",
+    "section": "Using Bootstrap",
+    "text": "Using Bootstrap\n\ncss classes for rapid style\n\nnpm i bootstrap@5.2.3",
+    "crumbs": [
+      "Blog",
+      "React",
+      "React + typescript"
+    ]
+  },
+  {
+    "objectID": "React/react_native.html",
+    "href": "React/react_native.html",
+    "title": "React-Native",
+    "section": "",
+    "text": "sudo npm  i -g expo-cli\nInstall expo app",
+    "crumbs": [
+      "Blog",
+      "React",
+      "React-Native"
+    ]
+  },
+  {
+    "objectID": "React/react_native.html#installation",
+    "href": "React/react_native.html#installation",
+    "title": "React-Native",
+    "section": "",
+    "text": "sudo npm  i -g expo-cli\nInstall expo app",
+    "crumbs": [
+      "Blog",
+      "React",
+      "React-Native"
+    ]
+  },
+  {
+    "objectID": "React/react_native.html#starting-a-new-project",
+    "href": "React/react_native.html#starting-a-new-project",
+    "title": "React-Native",
+    "section": "Starting a new project",
+    "text": "Starting a new project\nexpo init DoneWithIt",
+    "crumbs": [
+      "Blog",
+      "React",
+      "React-Native"
+    ]
+  },
+  {
+    "objectID": "grafana.html",
+    "href": "grafana.html",
+    "title": "Grafana",
+    "section": "",
+    "text": "sudo apt-get install -y adduser libfontconfig1 musl\nwget https://dl.grafana.com/enterprise/release/grafana-enterprise_10.2.0_amd64.deb\nsudo dpkg -i grafana-enterprise_10.2.0_amd64.deb",
+    "crumbs": [
+      "Blog",
+      "Grafana"
+    ]
+  },
+  {
+    "objectID": "grafana.html#installation",
+    "href": "grafana.html#installation",
+    "title": "Grafana",
+    "section": "",
+    "text": "sudo apt-get install -y adduser libfontconfig1 musl\nwget https://dl.grafana.com/enterprise/release/grafana-enterprise_10.2.0_amd64.deb\nsudo dpkg -i grafana-enterprise_10.2.0_amd64.deb",
+    "crumbs": [
+      "Blog",
+      "Grafana"
+    ]
+  },
+  {
+    "objectID": "grafana.html#to-start-grafana-server",
+    "href": "grafana.html#to-start-grafana-server",
+    "title": "Grafana",
+    "section": "To Start Grafana Server",
+    "text": "To Start Grafana Server\nsudo systemctl start grafana-server",
+    "crumbs": [
+      "Blog",
+      "Grafana"
+    ]
+  },
+  {
+    "objectID": "grafana.html#to-get-grafana-server-status",
+    "href": "grafana.html#to-get-grafana-server-status",
+    "title": "Grafana",
+    "section": "To get Grafana Server status",
+    "text": "To get Grafana Server status\nsudo systemctl status grafana-server",
+    "crumbs": [
+      "Blog",
+      "Grafana"
+    ]
+  },
+  {
+    "objectID": "grafana.html#to-stop-grafana-server",
+    "href": "grafana.html#to-stop-grafana-server",
+    "title": "Grafana",
+    "section": "To Stop Grafana server",
+    "text": "To Stop Grafana server\nsudo systemctl stop grafana-server",
+    "crumbs": [
+      "Blog",
+      "Grafana"
+    ]
+  },
+  {
+    "objectID": "grafana.html#localhost-port",
+    "href": "grafana.html#localhost-port",
+    "title": "Grafana",
+    "section": "LocalHost Port",
+    "text": "LocalHost Port\nhttp://localhost:3000",
+    "crumbs": [
+      "Blog",
+      "Grafana"
+    ]
+  },
+  {
+    "objectID": "grafana.html#first-login",
+    "href": "grafana.html#first-login",
+    "title": "Grafana",
+    "section": "First Login",
+    "text": "First Login\nuser: admin\npass: admin\n\ntoken = 'b4bTbQgLdRCvoBZQSjaRlUh8lnslIflVDFet6VeToen4GWu-MYwHilUddyWZorKPFCSFiu1KLNSvptXcHVDzPg=='",
+    "crumbs": [
+      "Blog",
+      "Grafana"
+    ]
+  },
+  {
+    "objectID": "git.html",
+    "href": "git.html",
+    "title": "GIT",
+    "section": "",
+    "text": "!git -h\n\nunknown option: -h\nusage: git [--version] [--help] [-C &lt;path&gt;] [-c &lt;name&gt;=&lt;value&gt;]\n           [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]\n           [--super-prefix=&lt;path&gt;] [--config-env=&lt;name&gt;=&lt;envvar&gt;]\n           &lt;command&gt; [&lt;args&gt;]",
+    "crumbs": [
+      "Blog",
+      "GIT"
+    ]
+  },
+  {
+    "objectID": "git.html#git-files",
+    "href": "git.html#git-files",
+    "title": "GIT",
+    "section": "Git Files",
+    "text": "Git Files\n.git : main file managing git stuff\n.gitignore : list of files and files types to ignore\n.github : git hub automation",
+    "crumbs": [
+      "Blog",
+      "GIT"
+    ]
+  },
+  {
+    "objectID": "git.html#creating-new-repo",
+    "href": "git.html#creating-new-repo",
+    "title": "GIT",
+    "section": "Creating New Repo",
+    "text": "Creating New Repo\n\nCreate repo in Github\ngit clone &lt;ssh url&gt;\n\n\nCreate repo locally\ngit init\ngit remote add &lt;name&gt; &lt;url&gt;",
+    "crumbs": [
+      "Blog",
+      "GIT"
+    ]
+  },
+  {
+    "objectID": "git.html#basic-commands",
+    "href": "git.html#basic-commands",
+    "title": "GIT",
+    "section": "Basic Commands",
+    "text": "Basic Commands\n\nChecking git status\ngit status\n\n\nAdding files to git repo\ngit add &lt;filenames&gt; \nFor adding all the files in the folder\ngit add * \n\n\nCommit it to local repo\ngit commit -m \"&lt;message&gt;\"\n\n\nFor pushing to github\ngit push\n\n\nFor pulling from github\ngit push",
+    "crumbs": [
+      "Blog",
+      "GIT"
+    ]
+  },
+  {
+    "objectID": "git.html#git-branches",
+    "href": "git.html#git-branches",
+    "title": "GIT",
+    "section": "Git Branches",
+    "text": "Git Branches\n\nFor viewing Braches\n\n!git branch\n\nshell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory\nfatal: Unable to read current working directory: No such file or directory\n\n\n\n\nAdding branches\ngit branch &lt;name&gt;\n\n\nSwitching branches\ngit checkout &lt;branch name&gt;\ncreate branch and move into it\ngit checkout -b &lt;branch name&gt;\n\n\nPush branch to github\ngit push --set-upstream &lt;online branch name&gt; &lt;local branch name&gt;\n\n\nDelete branch\ngit branch -d &lt;branch name&gt;",
+    "crumbs": [
+      "Blog",
+      "GIT"
+    ]
+  },
+  {
+    "objectID": "git.html#git-forking",
+    "href": "git.html#git-forking",
+    "title": "GIT",
+    "section": "Git Forking",
+    "text": "Git Forking",
+    "crumbs": [
+      "Blog",
+      "GIT"
+    ]
+  },
+  {
+    "objectID": "git.html#git-submodules",
+    "href": "git.html#git-submodules",
+    "title": "GIT",
+    "section": "Git submodules",
+    "text": "Git submodules",
+    "crumbs": [
+      "Blog",
+      "GIT"
+    ]
+  },
+  {
+    "objectID": "Flutter/widgets.html#stateless-widget",
+    "href": "Flutter/widgets.html#stateless-widget",
+    "title": "Widgets",
+    "section": "Stateless widget",
+    "text": "Stateless widget\n\ncannot change with time",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Widgets"
+    ]
+  },
+  {
+    "objectID": "Flutter/widgets.html#stateful-widget",
+    "href": "Flutter/widgets.html#stateful-widget",
+    "title": "Widgets",
+    "section": "Stateful widget",
+    "text": "Stateful widget\n\ncan change with time\n\n\ninitState()\n\ncalled only when the widget is created\nSubscribe to streams or any object that could change our widget data\n\n\n\nBuild()\n\nBuilds the widget tree\nA build is triggered every time we use setState()\n\n\n\nDispose()\n\nWhen the widget/state object is removed",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Widgets"
+    ]
+  },
+  {
+    "objectID": "Flutter/widgets.html#text-widget",
+    "href": "Flutter/widgets.html#text-widget",
+    "title": "Widgets",
+    "section": "Text Widget",
+    "text": "Text Widget\n\nstyle\ntextAlign\noverflow\nmaxLin- etc\n\nText('Click me')",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Widgets"
+    ]
+  },
+  {
+    "objectID": "Flutter/widgets.html#button-widget",
+    "href": "Flutter/widgets.html#button-widget",
+    "title": "Widgets",
+    "section": "Button Widget",
+    "text": "Button Widget\n\ncolor\nelevation\ndisabledColor\nenabled\netc\n\n     body: Center(\n       child: ElevatedButton.icon(\n         onPressed: () {\n           print('You clicked me');\n         },\n         icon: const Icon(Icons.mail),\n         label: const Text('Mail me'),\n         style: ElevatedButton.styleFrom(\n           shadowColor: Colors.amber,\n         ),\n       ),\n     ),",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Widgets"
+    ]
+  },
+  {
+    "objectID": "Flutter/widgets.html#row-and-column-widget",
+    "href": "Flutter/widgets.html#row-and-column-widget",
+    "title": "Widgets",
+    "section": "Row and Column Widget",
+    "text": "Row and Column Widget\n    body: Column(\n        mainAxisAlignment: MainAxisAlignment.spaceEvenly,\n        crossAxisAlignment: CrossAxisAlignment.center,\n        children: &lt;Widget&gt;[\n          Row(\n            mainAxisAlignment: MainAxisAlignment.center,\n            children: const &lt;Widget&gt;[\n              Text('Hello'),\n              Text('World'),\n            ],\n          ),\n          Container(\n            padding: const EdgeInsets.all(20.0),\n            color: Colors.grey[200],\n            child: const TextButton(\n              onPressed: null,\n              child: Text('Click Me'),\n            ),\n          ),\n          const ElevatedButton(\n            onPressed: null,\n            child: Text('Click Me'),\n          ),\n          const OutlinedButton(\n            onPressed: null,\n            child: Text('Click'),\n          ),\n        ],\n      ),",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Widgets"
+    ]
+  },
+  {
+    "objectID": "Flutter/widgets.html#image-widget",
+    "href": "Flutter/widgets.html#image-widget",
+    "title": "Widgets",
+    "section": "Image Widget",
+    "text": "Image Widget\n    body: Center(\n        child: Image.asset('assets/beach1.jpg'),\n      )",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Widgets"
+    ]
+  },
+  {
+    "objectID": "Flutter/widgets.html#expanded-widget",
+    "href": "Flutter/widgets.html#expanded-widget",
+    "title": "Widgets",
+    "section": "Expanded Widget",
+    "text": "Expanded Widget\n\nlife flex grid\n\n      body: Row(\n        children: &lt;Widget&gt;[\n          Expanded(\n            flex: 3,\n            child: Image.asset('assets/space1.jpg'),\n          ),\n          Expanded(\n            flex: 2,\n            child: Container(\n              padding: const EdgeInsets.all(30.0),\n              color: Colors.cyan,\n              child: Text('1'),\n            ),\n          ),\n          Expanded(\n            flex: 1,\n            child: Container(\n              padding: const EdgeInsets.all(30.0),\n              color: Colors.pink,\n              child: Text('2'),\n            ),\n          ),\n          Expanded(\n            flex: 3,\n            child: Container(\n              padding: const EdgeInsets.all(30.0),\n              color: Colors.amber,\n              child: Text('3'),\n            ),\n          ),\n        ],\n      )",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Widgets"
+    ]
+  },
+  {
+    "objectID": "Flutter/widgets.html#async-functions",
+    "href": "Flutter/widgets.html#async-functions",
+    "title": "Widgets",
+    "section": "Async functions",
+    "text": "Async functions\nvoid getData() async {\n    // simulate network request for a username\n    String username = await Future.delayed(Duration(seconds: 3), () {\n      return 'yoshi';\n    });\n\n    // simulate network request to get bio of the username\n    String bio = await Future.delayed(Duration(seconds: 2), () {\n      return 'vegan, musician & egg collector';\n    });\n\n    print('$username - $bio');\n  }\n  Future&lt;void&gt; getTime() async {\n    Response response = await get(\n      Uri.parse('http://worldtimeapi.org/api/timezone/$url'),\n    );\n    Map data = json.decode(response.body);\n\n    String datetime = data['datetime'];\n    String offset = data['utc_offset'].substring(1, 3);\n\n    DateTime now = DateTime.parse(datetime);\n    now = now.add(Duration(hours: int.parse(offset)));\n\n    time = now.toString();\n  }\n}",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Widgets"
+    ]
+  },
+  {
+    "objectID": "Flutter/widgets.html#routing",
+    "href": "Flutter/widgets.html#routing",
+    "title": "Widgets",
+    "section": "Routing",
+    "text": "Routing\n      routes: {\n        '/': (context) =&gt; Loading(),\n        '/home': (context) =&gt; Home(),\n        '/location': (context) =&gt; ChooseLocation(),\n      },\n    Navigator.pushReplacementNamed(context, '/home', arguments: {\n      'location': instance.location,\n      'flag': instance.flag,\n      'time': instance.time,\n      'isDaytime': instance.isDaytime,\n    });\n    onPressed: () async {\n      dynamic result =\n          await Navigator.pushNamed(context, '/location');\n      setState(() {\n        data = {\n          'time': result['time'],\n          'location': result['location'],\n          'isDaytime': result['isDaytime'],\n          'flag': result['flag'],\n        };\n      });\n    },\n    Navigator.pop(context, {\n      'location': instance.location,\n      'flag': instance.flag,\n      'time': instance.time,\n      'isDaytime': instance.isDaytime,\n    });",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Widgets"
+    ]
+  },
+  {
+    "objectID": "Flutter/dart.html",
+    "href": "Flutter/dart.html",
+    "title": "Dart",
+    "section": "",
+    "text": "void main() {\n  for (int i = 0; i &lt; 10; i++) {\n    print('hello ${i + 1}');\n  }\n}",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "objectID": "Flutter/dart.html#for-loop",
+    "href": "Flutter/dart.html#for-loop",
+    "title": "Dart",
+    "section": "",
+    "text": "void main() {\n  for (int i = 0; i &lt; 10; i++) {\n    print('hello ${i + 1}');\n  }\n}",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "objectID": "Flutter/dart.html#variables",
+    "href": "Flutter/dart.html#variables",
+    "title": "Dart",
+    "section": "Variables",
+    "text": "Variables\n\nInteger\nvoid main() {\n  int age = 30;\n  print(age);\n}\n\n\nString\nvoid main() {\n  String name = 'ben';\n  name = 'ken';\n  print(name);\n}\n\n\nBool\nvoid main() {\n  bool isNight = false;\n  print(isNight);\n}\n\n\nDynamic variable\nvoid main() {\n  dynamic name = 'ben';\n  name = 30;\n  print(name);\n}",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "objectID": "Flutter/dart.html#functions",
+    "href": "Flutter/dart.html#functions",
+    "title": "Dart",
+    "section": "Functions",
+    "text": "Functions\nvoid main() {\n  String greet = greeting();\n  int age = getAge();\n  print('${greet} and age:${age}');\n}\n\nString greeting() {\n  return 'hello';\n}\n\nint getAge() {\n  return 30;\n}",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "objectID": "Flutter/dart.html#function-simplified",
+    "href": "Flutter/dart.html#function-simplified",
+    "title": "Dart",
+    "section": "Function simplified",
+    "text": "Function simplified\nvoid main() {\n  String greet = greeting();\n  int age = getAge();\n  print('${greet} and age:${age}');\n}\n\nString greeting() =&gt; 'hello';\n\nint getAge() =&gt; 30;",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "objectID": "Flutter/dart.html#list-array",
+    "href": "Flutter/dart.html#list-array",
+    "title": "Dart",
+    "section": "List (array)",
+    "text": "List (array)\nvoid main() {\n  List&lt;String&gt; names = ['ben', 'kim', 'charlie'];\n  \n  names.add('jeff');\n  names.remove('kim');\n  \n  print(names);\n}",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "objectID": "Flutter/dart.html#classes",
+    "href": "Flutter/dart.html#classes",
+    "title": "Dart",
+    "section": "Classes",
+    "text": "Classes\nvoid main() {\n  User user1 = User('ben', 25);\n  print(user1.username);\n  user1.login();\n}\n\n\nclass User {\n  late String username;\n  late int age;\n  \n  User(String name, int age){\n    this.username = name;\n    this.age = age;\n  }\n  \n  void login() {\n    print('user logged in');\n  }\n  \n}",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "objectID": "Flutter/dart.html#inheritance",
+    "href": "Flutter/dart.html#inheritance",
+    "title": "Dart",
+    "section": "Inheritance",
+    "text": "Inheritance\nclass SuperUser extends User {\n  SuperUser(String username, int age):super(username, age);\n    \n  void publish() {\n    print('Super user ${this.username}');\n  }\n}",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "objectID": "influx.html",
+    "href": "influx.html",
+    "title": "Influx",
+    "section": "",
+    "text": "Inside WSL\n# Ubuntu/Debian AMD64\ncurl -O https://dl.influxdata.com/influxdb/releases/influxdb2_2.7.3-1_amd64.deb\nsudo dpkg -i influxdb2_2.7.3-1_amd64.deb",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#installation",
+    "href": "influx.html#installation",
+    "title": "Influx",
+    "section": "",
+    "text": "Inside WSL\n# Ubuntu/Debian AMD64\ncurl -O https://dl.influxdata.com/influxdb/releases/influxdb2_2.7.3-1_amd64.deb\nsudo dpkg -i influxdb2_2.7.3-1_amd64.deb",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#to-view-all-services",
+    "href": "influx.html#to-view-all-services",
+    "title": "Influx",
+    "section": "To view all Services",
+    "text": "To view all Services\nsystemctl --type=service --state=running\npstree | head -5\n\n!ps\n\n    PID TTY          TIME CMD\n2048646 pts/18   00:00:00 ps\n\n\n\n!pstree\n\nsystemd─┬─2*[agetty]\n        ├─cron\n        ├─dbus-daemon\n        ├─grafana───20*[{grafana}]\n        ├─influxd───53*[{influxd}]\n        ├─init-systemd(Ub─┬─SessionLeader───Relay(400)─┬─bash───tmux: client\n        │                 │                            ├─python───22*[{python}]\n        │                 │                            └─tmux: server─┬─bash───+\n        │                 │                                           ├─6*[bash+\n        │                 │                                           ├─bash───+\n        │                 │                                           └─bash───+\n        │                 ├─SessionLeader───Relay(707)───bash\n        │                 ├─SessionLeader───Relay(8620)───bash───tmux: client\n        │                 ├─SessionLeader───Relay(1997513)───bash───tmux: clien+\n        │                 ├─init───{init}\n        │                 ├─login───bash\n        │                 └─{init-systemd(Ub}\n        ├─networkd-dispat\n        ├─packagekitd───2*[{packagekitd}]\n        ├─polkitd───2*[{polkitd}]\n        ├─rsyslogd───3*[{rsyslogd}]\n        ├─smtpd───6*[smtpd]\n        ├─snapd───18*[{snapd}]\n        ├─16*[snapfuse]\n        ├─sshd\n        ├─subiquity-serve───python3.10─┬─python3\n        │                              └─5*[{python3.10}]\n        ├─systemd───(sd-pam)\n        ├─systemd-journal\n        ├─systemd-logind\n        ├─systemd-resolve\n        ├─systemd-udevd───2*[systemd-udevd]\n        └─unattended-upgr───{unattended-upgr}",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#server-settings",
+    "href": "influx.html#server-settings",
+    "title": "Influx",
+    "section": "Server Settings",
+    "text": "Server Settings\n\nTo start influx server\nsudo service influxdb start --http-bind-address :8080\n\n\nShow Status of influx server\nsudo service influxdb status\n\n\nTo Stop influx server\nsudo service influxdb stop",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#influxdb-oss-urls",
+    "href": "influx.html#influxdb-oss-urls",
+    "title": "Influx",
+    "section": "InfluxDB OSS URLs",
+    "text": "InfluxDB OSS URLs\nhttp://localhost:8086/",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#t0-change-ports",
+    "href": "influx.html#t0-change-ports",
+    "title": "Influx",
+    "section": "T0 change ports",
+    "text": "T0 change ports\ninfluxd --http-bind-address :8080",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#to-setup-influx-server",
+    "href": "influx.html#to-setup-influx-server",
+    "title": "Influx",
+    "section": "To setup influx server",
+    "text": "To setup influx server\n\nFirst step, Must do\n\ninflux setup \\\n  --username bthek1 \\\n  --password &lt;password&gt; \\\n  --token TOKEN \\\n  --org ORGANIZATION_NAME \\\n  --bucket BUCKET_NAME \\\n  --force",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#organisation-settings",
+    "href": "influx.html#organisation-settings",
+    "title": "Influx",
+    "section": "Organisation Settings",
+    "text": "Organisation Settings\n\nTo show organisation list\ninflux org ls",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#bucket-settings",
+    "href": "influx.html#bucket-settings",
+    "title": "Influx",
+    "section": "Bucket Settings",
+    "text": "Bucket Settings\n\nTo show Bucket list\ninflux bucket ls\n\n\nTo create bucket\ninflux bucket create --name &lt;name&gt; -c &lt;config-file&gt;\n\n\nTo enter data to bucket\ninflux write --bucket sample-bucket --url https://influx-testdata.s3.amazonaws.com/air-sensor-data-annotated.csv\ninflux write -b energy_data -f 'energy.lp'\n\n\nTo query data from influx\ninflux query 'from(bucket:\\\"sample-bucket\\\") |&gt; range(start:-30m)'\ninflux query 'from(bucket: \"sample-bucket\")\n  |&gt; range(start:-4h , stop: -0m)\n  |&gt; filter(fn: (r) =&gt; r[\"_measurement\"] == \"airSensors\")\n  |&gt; filter(fn: (r) =&gt; r[\"_field\"] == \"temperature\")\n  |&gt; aggregateWindow(every: 1m, fn: mean, createEmpty: false)\n  |&gt; yield(name: \"mean\")'",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#user-settings",
+    "href": "influx.html#user-settings",
+    "title": "Influx",
+    "section": "User settings",
+    "text": "User settings\n\nTo create new user\ninflux user create -n &lt;username&gt; -p &lt;password&gt; -o &lt;org-name&gt; \ninflux user create -n ben -p Asdf,mnb1234 -o phisaver\n\n\nTo show user list\ninflux user ls\n\n\nTo delete user\ninflux user delete -i &lt;id&gt;\n\n\nTo delete user\ninflux user update -i &lt;user-id&gt; -n &lt;new-username&gt;",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#task",
+    "href": "influx.html#task",
+    "title": "Influx",
+    "section": "Task",
+    "text": "Task\nimport influxdata/influxdb/sample\n\n\noption task = {\n  name: \"Collect air sensor sample data\",\n  every: '15m',\n}\n\nsample.data(set: \"airSensor\")\n    |&gt; to(bucket: \"example-bucket\")",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "influx.html#python-version",
+    "href": "influx.html#python-version",
+    "title": "Influx",
+    "section": "Python Version",
+    "text": "Python Version\n\nCreate config.ini file\n[APP]\nINFLUX_URL = &lt;INFLUX_URL&gt;\nINFLUX_TOKEN = &lt;INFLUX_TOKEN&gt;\nINFLUX_ORG = &lt;INFLUX_ORG_ID&gt;\nINFLUX_BUCKET = iot_center\nINFLUX_BUCKET_AUTH = iot_center_devices\n\n# Import the dependencies.\nimport configparser\nfrom datetime import datetime\nfrom uuid import uuid4\n\n# Import client library classes.\nfrom influxdb_client import Authorization, InfluxDBClient, Permission, PermissionResource, Point, WriteOptions\n\nfrom influxdb_client.client.write_api import SYNCHRONOUS\nimport influxdb_client\n\n# Get the configuration key-value pairs.\n\nconfig = configparser.ConfigParser()\nconfig.read('config.ini')\n\n['config.ini']\n\n\n\n\nConnect to server using InfluxDBClient\n\nclient = InfluxDBClient(url=config.get('APP', 'INFLUX_URL'),\n                        token=config.get('APP', 'INFLUX_TOKEN'),\n                        org=config.get('APP', 'INFLUX_ORG'),)\n\n\nclient.ping()\n\nTrue\n\n\n\n\nAuth: create, list, delete\n\nauthorization_api = client.authorizations_api()\nauth_list = authorization_api.find_authorizations()\n\nfor auth in auth_list:\n    print(auth.token)\n\np_5lZramPcqYC4EPNRVpRhAFs4RvWc8cPXtt9exsIPH8ybJP3lKlf5KMKjLf2ueHFlcmo45ZBxeeU3ZtKQ-LDQ==\nCeAAU2CprLUJoammpG9G7JuGTZ2qosK_shCBdXZvnIai46GFf7VB8jfd8XV6yeAeRjAc8nwAYkyhYL5BhDji2g==\nU1HdRByFCwZJhoNaKqVg9tja0zHw23TO7-pUxSSFhzDxt740WZ1DRUZoRWx6Brs5lDRBJqU-bB11kkVGBxtNfg==\nIPPdYDQH2s43p7jCro1SI_oJ8aGhFjkDEpgMSFuGs-vXuKnOMy1mvQzVLBoth2tKmvJGpy6ePo5c93sO8xTUkg==\n\n\n\n\nBucket: create, list, delete\n\nbuckets_api = client.buckets_api()\nbucket_list = buckets_api.find_buckets()\n\n\nfor bucket in bucket_list.buckets:\n    print(bucket.name)\n\n_tasks\nsample-bucket\n_monitoring\nenergy_data\npower_data\ntest\nWeather\n\n\n\nclient = InfluxDBClient(url=config.get('APP', 'INFLUX_URL'),\n                        token=config.get('APP', 'INFLUX_TOKEN'),\n                        org=config.get('APP', 'INFLUX_ORG'),)\n\nbuckets_api = client.buckets_api()\nbucket_list = buckets_api.find_buckets()\nbucket_name = 'solar_forecast'\n\nif bucket_name not in [bucket.name for bucket in bucket_list.buckets]:\n    buckets_api.create_bucket(bucket_name = bucket_name)\nelse:\n    print('bucket already exists')\n\nbucket already exists\n\n\n\n# Specify the name of the bucket you want to delete\nbucket_name = \"your_bucket_name\"\n\ntry:\n    # Delete the bucket\n    client.buckets_api().delete_bucket(bucket_name=bucket_name)\n    print(f\"Bucket '{bucket_name}' deleted successfully.\")\nexcept ApiException as e:\n    print(f\"Failed to delete bucket '{bucket_name}': {e}\")\n\n\n\nOrganization: create, list, delete\n\nori_api = client.organizations_api()\norganization_list = ori_api.find_organizations()\n\n\nfor ori in organization_list:\n    print(ori.name)\n\nOrg1\n\n\n\n\nUser: create, list, delete\n\nusers_api = client.users_api()\n\n\nusers_list = users_api.find_users()\nusers_list\n\n{'links': {'_self': '/api/v2/users'},\n 'users': [{'id': '0ca78064bac9d000',\n            'links': {'_self': '/api/v2/users/0ca78064bac9d000'},\n            'name': 'ben',\n            'status': 'active'}]}\n\n\n\n\nQuery: create, list, delete\n\nimport pandas as pd\n\n\nquery_api = client.query_api()\n\nquery = '''from(bucket: \"sample-bucket\")\n  |&gt; range(start: 2024-02-28T03:50:00.000Z, stop: 2024-02-28T04:50:00.000Z)\n  |&gt; filter(fn: (r) =&gt; r[\"_measurement\"] == \"airSensors\")\n  |&gt; filter(fn: (r) =&gt; r[\"_field\"] == \"humidity\")\n  |&gt; filter(fn: (r) =&gt; r[\"sensor_id\"] == \"TLM0101\" or r[\"sensor_id\"] == \"TLM0102\")\n  |&gt; aggregateWindow(every: 1s, fn: mean, createEmpty: false)\n  |&gt; yield(name: \"mean\") \n  |&gt; pivot(rowKey:[\"_time\"], columnKey: [\"_field\"], valueColumn: \"_value\")'''\n\n\ndata = query_api.query_data_frame(org=config.get('APP', 'INFLUX_ORG'), query=query)\n\n\ndata1 = data[0]\n\n\ndata1\n\n\n\n\n\n\n\n\n\nresult\ntable\n_start\n_stop\n_time\n_value\n_field\n_measurement\nsensor_id\n\n\n\n\n0\nmean\n0\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 03:50:05+00:00\n34.889344\nhumidity\nairSensors\nTLM0101\n\n\n1\nmean\n0\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 03:50:15+00:00\n34.919323\nhumidity\nairSensors\nTLM0101\n\n\n2\nmean\n0\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 03:50:25+00:00\n34.929411\nhumidity\nairSensors\nTLM0101\n\n\n3\nmean\n0\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 03:50:35+00:00\n34.920287\nhumidity\nairSensors\nTLM0101\n\n\n4\nmean\n0\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 03:50:45+00:00\n34.969323\nhumidity\nairSensors\nTLM0101\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n705\nmean\n1\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 04:48:25+00:00\n35.477672\nhumidity\nairSensors\nTLM0102\n\n\n706\nmean\n1\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 04:48:35+00:00\n35.434914\nhumidity\nairSensors\nTLM0102\n\n\n707\nmean\n1\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 04:48:45+00:00\n35.466550\nhumidity\nairSensors\nTLM0102\n\n\n708\nmean\n1\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 04:48:55+00:00\n35.433109\nhumidity\nairSensors\nTLM0102\n\n\n709\nmean\n1\n2024-02-28 03:50:00+00:00\n2024-02-28 04:50:00+00:00\n2024-02-28 04:49:05+00:00\n35.482699\nhumidity\nairSensors\nTLM0102\n\n\n\n\n710 rows × 9 columns\n\n\n\n\n\ndata1.loc[1]\n\nresult                               mean\ntable                                   0\n_start          2024-02-28 03:50:00+00:00\n_stop           2024-02-28 04:50:00+00:00\n_time           2024-02-28 03:50:15+00:00\n_value                          34.919323\n_field                           humidity\n_measurement                   airSensors\nsensor_id                         TLM0101\nName: 1, dtype: object\n\n\n\n\nWrite: create, list, delete\n\nfrom datetime import datetime\n\n\nwrite_Api = client.write_api(write_options=SYNCHRONOUS)\n\n\ndt = '2024-03-01 05:20:09'\ndate = pd.to_datetime(dt).strftime('%Y-%m-%dT%H:%M:%SZ')\ndate\n\n'2024-03-01T05:20:09Z'\n\n\n\ntimestamp = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')\ntimestamp\n\n'2024-02-29T09:42:00Z'\n\n\n\ndictionary = {\"measurement\": \"h2o_feet\",\n              \"tags\": {\"location\": \"us-west\"},\n              \"fields\": {\"level\": 150},\n              \"time\": date\n             }\ndictionary\n\n{'measurement': 'h2o_feet',\n 'tags': {'location': 'us-west'},\n 'fields': {'level': 150},\n 'time': '2024-03-01T05:20:09Z'}\n\n\n\nwrite_Api.write(bucket=\"test\",org=\"Org1\", record=dictionary)\n\npath = '/home/ben/BENEDICT_Only/Benedict_Projects/Intership/Phisaver/data_phisaver/energy.lp'\n\n# Open the .lp file\nwith open(path, 'r') as file:\n    # Read the first 5 lines\n    for line in file:\n        write_Api.write(bucket=bucket_name, \n                        org=\"Org1\",\n                        record=line.strip())\nwith open(path, 'r') as file:\n    lp_content = file.read()\nfor line in tqdm(text.split('\\n')):\n        write_Api.write(bucket='test', \n                        org=\"Org1\",\n                        record=line.strip())",
+    "crumbs": [
+      "Blog",
+      "Influx"
+    ]
+  },
+  {
+    "objectID": "pipenv.html",
+    "href": "pipenv.html",
+    "title": "Pipenv",
+    "section": "",
+    "text": "pip install pipenv",
+    "crumbs": [
+      "Blog",
+      "Pipenv"
+    ]
+  },
+  {
+    "objectID": "pipenv.html#installation",
+    "href": "pipenv.html#installation",
+    "title": "Pipenv",
+    "section": "",
+    "text": "pip install pipenv",
+    "crumbs": [
+      "Blog",
+      "Pipenv"
+    ]
+  },
+  {
+    "objectID": "pipenv.html#create-a-env",
+    "href": "pipenv.html#create-a-env",
+    "title": "Pipenv",
+    "section": "Create a env",
+    "text": "Create a env\npipenv install django",
+    "crumbs": [
+      "Blog",
+      "Pipenv"
+    ]
+  },
+  {
+    "objectID": "pipenv.html#remove-an-env",
+    "href": "pipenv.html#remove-an-env",
+    "title": "Pipenv",
+    "section": "Remove an env",
+    "text": "Remove an env\npipenv --rm",
+    "crumbs": [
+      "Blog",
+      "Pipenv"
+    ]
+  },
+  {
+    "objectID": "pipenv.html#activate-already-created-pipenv-environment",
+    "href": "pipenv.html#activate-already-created-pipenv-environment",
+    "title": "Pipenv",
+    "section": "Activate already created pipenv environment",
+    "text": "Activate already created pipenv environment\npipenv shell",
+    "crumbs": [
+      "Blog",
+      "Pipenv"
+    ]
+  },
+  {
+    "objectID": "pipenv.html#to-deactivate",
+    "href": "pipenv.html#to-deactivate",
+    "title": "Pipenv",
+    "section": "To Deactivate",
+    "text": "To Deactivate\ndeactivate",
+    "crumbs": [
+      "Blog",
+      "Pipenv"
+    ]
+  },
+  {
+    "objectID": "pipenv.html#installuninstall-dependencies",
+    "href": "pipenv.html#installuninstall-dependencies",
+    "title": "Pipenv",
+    "section": "Install/Uninstall dependencies",
+    "text": "Install/Uninstall dependencies\npipenv install django\npipenv uninstall django\nInstall dev dependencies\npipenv install nose --dev\nInstall from requirements.txt\npipenv install -r requirements.txt\nCheck security vulnerabilities\npipenv check\nCheck dependency graph\npipenv graph",
+    "crumbs": [
+      "Blog",
+      "Pipenv"
+    ]
+  },
+  {
+    "objectID": "Flutter/flutter.html",
+    "href": "Flutter/flutter.html",
+    "title": "Flutter",
+    "section": "",
+    "text": "https://docs.flutter.dev/get-started/install/linux\n\nsudo snap install flutter --classic\nflutter sdk-path",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Flutter"
+    ]
+  },
+  {
+    "objectID": "Flutter/flutter.html#install-flutter-in-wsl",
+    "href": "Flutter/flutter.html#install-flutter-in-wsl",
+    "title": "Flutter",
+    "section": "",
+    "text": "https://docs.flutter.dev/get-started/install/linux\n\nsudo snap install flutter --classic\nflutter sdk-path",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Flutter"
+    ]
+  },
+  {
+    "objectID": "Flutter/flutter.html#check-flutter-install-status",
+    "href": "Flutter/flutter.html#check-flutter-install-status",
+    "title": "Flutter",
+    "section": "Check FLutter install status",
+    "text": "Check FLutter install status\nflutter doctor",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Flutter"
+    ]
+  },
+  {
+    "objectID": "Flutter/flutter.html#install-android-studio-in-wsl",
+    "href": "Flutter/flutter.html#install-android-studio-in-wsl",
+    "title": "Flutter",
+    "section": "Install Android Studio in WSL",
+    "text": "Install Android Studio in WSL\nInstall android studio linux tar gz file\n\n\n\nandroid.png\n\n\ngo into usr/local and unzip the tar gz file\ncd /usr/local/\ntar xf ~/Downloads/android-studio-version-number-linux.tar.gz\n\nRestart the computer",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Flutter"
+    ]
+  },
+  {
+    "objectID": "Flutter/flutter.html#running-android-studio",
+    "href": "Flutter/flutter.html#running-android-studio",
+    "title": "Flutter",
+    "section": "Running Android Studio",
+    "text": "Running Android Studio\ncd /usr/local/\nandroid-studio/bin/studio.sh\nOpen Android Studio -&gt; More Actions -&gt; SDK manager -&gt; SDK Tools -&gt; Android SDK Command line\n\n\n\nsdk_manager.png\n\n\n\nConfigure Android\nStart Android Studio.\n\nThe Welcome to Android Studio dialog displays.\n\nFollow the Android Studio Setup Wizard.\n\nInstall the following components:\n    Android SDK Platform, API 33.0.0\n    Android SDK Command-line Tools\n    Android SDK Build-Tools\n    Android SDK Platform-Tools\n    Android Emulator",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Flutter"
+    ]
+  },
+  {
+    "objectID": "Flutter/flutter.html#connect-phone",
+    "href": "Flutter/flutter.html#connect-phone",
+    "title": "Flutter",
+    "section": "Connect Phone",
+    "text": "Connect Phone\n\nEnable Developer options\n\nSettings -&gt; About phone -&gt; Software Information -&gt; Build Number\n\n\n\nUSB debugging\n\nSettings -&gt; Developer Options -&gt; USB debugging && Wireless debugging\n\n\n\nWireless dubugging\n\nadd this to .bashrc to access adb\n\nexport PATH=\"/home/thekkel/Android/Sdk/platform-tools:$PATH\"\n\ntry adb in terminal to see if it worked\n\n\nfind ip address of phone and try pinging it\n\n\nOnce your device is connected via USB, run the following command to map the desired port to adb.\n\nadb tcpip 5555\n\nAnd the next step will be connecting to the target test device, by using the IP address we obtained in step 3. Do this by executing the adb connect command, and pass the device’s IP address.\n\nadb connect 192.168.1.168\n\nIf you are still getting errors, try killing your debug server, and start from the first step. To kill the service, simply run this adb command.\n\nabd kill-server",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Flutter"
+    ]
+  },
+  {
+    "objectID": "Flutter/flutter.html#create-demo",
+    "href": "Flutter/flutter.html#create-demo",
+    "title": "Flutter",
+    "section": "Create demo",
+    "text": "Create demo\nTo create a new Flutter app, run the following commands in your shell or Terminal.\nflutter create test_drive\ncd test_drive\nTo verify that you have a running target device, run the following command.\nflutter devices\n\nTo run on emulator\nList devices\nflutter emulators\nLaunch devices\nflutter emulators --launch &lt;emulator id&gt;\nTo run your app, run the following command.\nflutter run",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Flutter"
+    ]
+  },
+  {
+    "objectID": "Flutter/flutter.html#make-changes",
+    "href": "Flutter/flutter.html#make-changes",
+    "title": "Flutter",
+    "section": "Make changes",
+    "text": "Make changes\n\nOpen lib/main.dart.\nMake changes\nSave your changes.\nType r in the terminal window.",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Flutter"
+    ]
+  },
+  {
+    "objectID": "Flutter/riverpod.html",
+    "href": "Flutter/riverpod.html",
+    "title": "Riverpod",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Blog",
+      "Flutter",
+      "Riverpod"
+    ]
+  },
+  {
+    "objectID": "django.html",
+    "href": "django.html",
+    "title": "Django",
+    "section": "",
+    "text": "Admin site\nObject-relational mapper\nAuthentication\nCaching\n\nHTTP : Hypertext Transfer Protocol",
+    "crumbs": [
+      "Blog",
+      "Django"
+    ]
+  },
+  {
+    "objectID": "django.html#features",
+    "href": "django.html#features",
+    "title": "Django",
+    "section": "",
+    "text": "Admin site\nObject-relational mapper\nAuthentication\nCaching\n\nHTTP : Hypertext Transfer Protocol",
+    "crumbs": [
+      "Blog",
+      "Django"
+    ]
+  },
+  {
+    "objectID": "django.html#installation",
+    "href": "django.html#installation",
+    "title": "Django",
+    "section": "Installation",
+    "text": "Installation\npip install django",
+    "crumbs": [
+      "Blog",
+      "Django"
+    ]
+  },
+  {
+    "objectID": "django.html#help",
+    "href": "django.html#help",
+    "title": "Django",
+    "section": "Help",
+    "text": "Help\ndjango-admin\n\n\nCode\n!django-admin\n\n\n\nType 'django-admin help &lt;subcommand&gt;' for help on a specific subcommand.\n\nAvailable subcommands:\n\n[django]\n    check\n    compilemessages\n    createcachetable\n    dbshell\n    diffsettings\n    dumpdata\n    flush\n    inspectdb\n    loaddata\n    makemessages\n    makemigrations\n    migrate\n    optimizemigration\n    runserver\n    sendtestemail\n    shell\n    showmigrations\n    sqlflush\n    sqlmigrate\n    sqlsequencereset\n    squashmigrations\n    startapp\n    startproject\n    test\n    testserver\nNote that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).",
+    "crumbs": [
+      "Blog",
+      "Django"
+    ]
+  },
+  {
+    "objectID": "django.html#start-project",
+    "href": "django.html#start-project",
+    "title": "Django",
+    "section": "Start project",
+    "text": "Start project\ndjango-admin startproject storefront .",
+    "crumbs": [
+      "Blog",
+      "Django"
+    ]
+  },
+  {
+    "objectID": "django.html#local-server",
+    "href": "django.html#local-server",
+    "title": "Django",
+    "section": "Local Server",
+    "text": "Local Server\npython manage.py runserver\non http://127.0.0.1:8000/",
+    "crumbs": [
+      "Blog",
+      "Django"
+    ]
+  },
+  {
+    "objectID": "django.html#creating-new-app",
+    "href": "django.html#creating-new-app",
+    "title": "Django",
+    "section": "Creating new app",
+    "text": "Creating new app\npython manage.py startapp &lt;name&gt;",
+    "crumbs": [
+      "Blog",
+      "Django"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Webdevelopment Documentation",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "Blog",
+      "[Webdevelopment Documentation](https://bthek1.github.io/webdevelopment_doc/)"
+    ]
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "Webdevelopment Documentation",
+    "section": "Install",
+    "text": "Install\npip install webdevelopment_doc",
+    "crumbs": [
+      "Blog",
+      "[Webdevelopment Documentation](https://bthek1.github.io/webdevelopment_doc/)"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Webdevelopment Documentation",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "Blog",
+      "[Webdevelopment Documentation](https://bthek1.github.io/webdevelopment_doc/)"
+    ]
+  },
+  {
+    "objectID": "React/node.html",
+    "href": "React/node.html",
+    "title": "Node",
+    "section": "",
+    "text": "If you have root access, you can omit the ‘sudo’ command as you already have full administrative privileges.\n\n\n\nsudo apt-get update\nsudo apt-get install -y ca-certificates curl gnupg\nsudo mkdir -p /etc/apt/keyrings\ncurl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg\n\n\n\nNODE_MAJOR=20\necho \"deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main\" | sudo tee /etc/apt/sources.list.d/nodesource.list\n\nOptional: NODE_MAJOR can be changed depending on the version you need.\nNODE_MAJOR=16\nNODE_MAJOR=18\nNODE_MAJOR=20\nNODE_MAJOR=21\n\n\n\n\nsudo apt-get update\nsudo apt-get install nodejs -y",
+    "crumbs": [
+      "Blog",
+      "React",
+      "Node"
+    ]
+  },
+  {
+    "objectID": "React/node.html#installation-instructions-node.js",
+    "href": "React/node.html#installation-instructions-node.js",
+    "title": "Node",
+    "section": "",
+    "text": "If you have root access, you can omit the ‘sudo’ command as you already have full administrative privileges.\n\n\n\nsudo apt-get update\nsudo apt-get install -y ca-certificates curl gnupg\nsudo mkdir -p /etc/apt/keyrings\ncurl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg\n\n\n\nNODE_MAJOR=20\necho \"deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main\" | sudo tee /etc/apt/sources.list.d/nodesource.list\n\nOptional: NODE_MAJOR can be changed depending on the version you need.\nNODE_MAJOR=16\nNODE_MAJOR=18\nNODE_MAJOR=20\nNODE_MAJOR=21\n\n\n\n\nsudo apt-get update\nsudo apt-get install nodejs -y",
+    "crumbs": [
+      "Blog",
+      "React",
+      "Node"
+    ]
+  },
+  {
+    "objectID": "React/node.html#uninstall-nodejs-ubuntu-debian-packages",
+    "href": "React/node.html#uninstall-nodejs-ubuntu-debian-packages",
+    "title": "Node",
+    "section": "Uninstall nodejs Ubuntu & Debian packages",
+    "text": "Uninstall nodejs Ubuntu & Debian packages\n\nTo completely remove Node.js installed from the deb.nodesource.com package methods above:\n\n\nuse sudo on Ubuntu or run this as root on debian\n\napt-get purge nodejs &&\\\nrm -r /etc/apt/sources.list.d/nodesource.list &&\\\nrm -r /etc/apt/keyrings/nodesource.gpg",
+    "crumbs": [
+      "Blog",
+      "React",
+      "Node"
+    ]
+  }
+]
